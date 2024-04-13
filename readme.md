@@ -10,6 +10,7 @@ in input_dblp.py file，modify start_urls and year
 ```
     start_urls = []  # dblp homepage from needed conf/jou
     year = n  # Recent n years
+    keyword = r'\bkeyword\b' #replace keyword
 ```
 Then we can begin
 ```

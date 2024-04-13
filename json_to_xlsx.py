@@ -4,7 +4,8 @@ import re
 import openpyxl
 import copy
 import re
-keyword = r'\bGUI|vision\b'
+from input_dblp import keyword
+
 def get_year(data):
     pattern = re.compile(r'20\d\d')
     time_tmp = pattern.findall(data)
