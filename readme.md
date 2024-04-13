@@ -6,7 +6,7 @@ a web crawler that is based on Crawl-ConOrJou
 ```
 
 ### Use
-in input_dblp.py文件中，modify start_urls and year
+in input_dblp.py file，modify start_urls and year
 ```
     start_urls = []  # dblp homepage from needed conf/jou
     year = n  # Recent n years
