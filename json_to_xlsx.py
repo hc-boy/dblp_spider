@@ -21,6 +21,18 @@ def judge_key(info, keyword):
         return True
     return False
 
+def merge_array(file_path):
+    with open(file_path, 'r') as file:
+        data = file.read()
+        data = data.replace('][',',')
+        result = json.loads(data)
+    
+    return result
+
+
+
+    return result     
+
 def write_list_info():
     workbook = openpyxl.Workbook()
     # workbook = xlwt.Workbook(encoding='utf-8')
@@ -32,15 +44,15 @@ def write_list_info():
     worksheet.cell(1,3+1, '作者')
     worksheet.cell(1,4+1, '论文名称')
 
-    with open('info.json','r') as f:
-        info_dict = json.load(f)
-
+    # with open('info.json','r') as f:
+    #     info_dict = json.load(f)
+    info_dict = merge_array('info.json')
     index = 1
     sheet_index = 1
-    print(info_dict[1])
-    print(judge_key(info_dict[1],keyword))
-    print(info_dict[1]['title'])
-    print(keyword)
+    # print(info_dict[1])
+    # print(judge_key(info_dict[1],keyword))
+    # print(info_dict[1]['title'])
+    # print(keyword)
     
     for info in info_dict:
         if index >= 100000:
