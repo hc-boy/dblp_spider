@@ -1,8 +1,12 @@
-start_urls = ["https://dblp.org/db/journals/toplas/index.html","https://dblp.org/db/journals/tosem/index.html","https://dblp.org/db/journals/tse/index.html",
-                 "https://dblp.org/db/journals/ase/index.html", "https://dblp.org/db/conf/pldi/index.html", "https://dblp.org/db/conf/popl/index.html",
-                 "https://dblp.org/db/conf/sigsoft/index.html", "https://dblp.org/db/conf/oopsla/index.html", "https://dblp.org/db/conf/kbse/index.html", 
-                 "https://dblp.org/db/conf/icse/index.html", "https://dblp.org/db/conf/issta/index.html"]  # 要爬的dblp会议/期刊的主页
+start_urls = ["http://dblp.uni-trier.de/db/journals/jsac/","http://dblp.uni-trier.de/db/journals/tmc/","http://dblp.uni-trier.de/db/journals/ton/","http://dblp.uni-trier.de/db/journals/tdsc/","http://dblp.uni-trier.de/db/journals/tifs/","http://dblp.uni-trier.de/db/journals/joc/",
+              "http://dblp.uni-trier.de/db/journals/tog/","http://dblp.uni-trier.de/db/journals/tip/","http://dblp.uni-trier.de/db/journals/tvcg/","http://dblp.uni-trier.de/db/journals/ai/","http://dblp.uni-trier.de/db/journals/pami/","http://dblp.uni-trier.de/db/journals/ijcv/","http://dblp.uni-trier.de/db/journals/jmlr/",
+              "http://dblp.uni-trier.de/db/journals/tochi/","http://dblp.uni-trier.de/db/journals/ijmms/","http://dblp.uni-trier.de/db/journals/jacm/","http://dblp.uni-trier.de/db/journals/pieee/","http://dblp.uni-trier.de/db/journals/chinaf/",
+              "http://dblp.uni-trier.de/db/conf/sigcomm/index.html","http://dblp.uni-trier.de/db/conf/mobicom/","http://dblp.uni-trier.de/db/conf/infocom/","http://dblp.uni-trier.de/db/conf/nsdi/","http://dblp.uni-trier.de/db/conf/ccs/","http://dblp.uni-trier.de/db/conf/sp/","http://dblp.uni-trier.de/db/conf/uss/","http://dblp.uni-trier.de/db/conf/ndss/",
+              "http://dblp.uni-trier.de/db/conf/mm/","http://dblp.uni-trier.de/db/conf/siggraph/index.html","http://dblp.uni-trier.de/db/conf/vr/","http://dblp.uni-trier.de/db/conf/visualization/index.html","http://dblp.uni-trier.de/db/conf/aaai/","http://dblp.uni-trier.de/db/conf/nips/","http://dblp.uni-trier.de/db/conf/acl/","http://dblp.uni-trier.de/db/conf/cvpr/",
+              "http://dblp.uni-trier.de/db/conf/iccv/","http://dblp.uni-trier.de/db/conf/icml/","http://dblp.uni-trier.de/db/conf/ijcai/","http://dblp.uni-trier.de/db/conf/cscw","http://dblp.uni-trier.de/db/conf/chi","http://dblp.uni-trier.de/db/conf/huc/","http://dblp.uni-trier.de/db/conf/uist/","http://dblp.uni-trier.de/db/conf/www/","http://dblp.uni-trier.de/db/conf/rtss/",
+              "http://dblp.org/db/conf/wine/index.html"
+              ]  # 要爬的dblp会议/期刊的主页
 # start_urls = ["https://dblp.org/db/conf/icse/index.html"]
-year = 10  # how many recent year
-keyword = r'\b(GUI|vision)\b' #edit the reg-ex to costumize search option
+year = 5  # how many recent year
+keyword = r'\b([A-Z]*UI|[vV]ision|[uU]ser [iI]nterface|[mM]obile|[aA]ndroid|iOS|[wW]eb|HTML|[gG]ame|[rR]eality|XR|VR|AR|MR|[Rr]eplay|[Mm]ultimodal|[vV]isual|[wW]idget|[iI]con)\b' #edit the reg-ex to costumize search option
 delay = 1.8 #download minimum delay, in second
