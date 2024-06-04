@@ -18,7 +18,7 @@ headers = {
 
 class DblpSpider(scrapy.Spider):
     name = 'dblp'
-    allowed_domains = ['dblp.org']  # 限制爬虫的区域
+    allowed_domains = ['dblp.org','dblp.uni-trier.de']  # 限制爬虫的区域
     start_urls = start_urls # ["https://dblp.org/db/conf/sigsoft/index.html"]  # 要爬的dblp会议/期刊的主页
 
 
